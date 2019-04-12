@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         //här
         setContentView(webView);
         //här
-        webView.loadUrl("http://wwwlab.iit.his.se/o18marka/webbapplikation%20projekt/index.html");
+        //webView.loadUrl("http://wwwlab.iit.his.se/o18marka/webbapplikation%20projekt/index.html");
+        webView.loadUrl("file:///android_asset/test.html");
 
         WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
