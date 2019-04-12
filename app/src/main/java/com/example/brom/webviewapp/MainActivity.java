@@ -10,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 public class MainActivity extends AppCompatActivity {
@@ -30,7 +31,11 @@ public class MainActivity extends AppCompatActivity {
         //här
         webView.loadUrl("http://wwwlab.iit.his.se/o18marka/webbapplikation%20projekt/index.html");
 
+        WebSettings webSettings = webView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
     }
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
